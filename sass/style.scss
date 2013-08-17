@@ -15,7 +15,7 @@ $main-color: #7f0019;
 }
 
 #header {
-	margin: 0 0 2em;
+	margin: 2em 0;
 }
 
 .blog-title {
@@ -88,6 +88,7 @@ $main-color: #7f0019;
 		margin: 0 .5em 1em;
 		a:link,a:visited {
 			color: $main-color;
+			font-weight: bold;
 		}
 		img {
 			display: block;
