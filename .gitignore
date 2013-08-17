@@ -1,0 +1,9 @@
+#Mac
+.DS_Store
+
+#Sass/Compass
+.sass-cache
+config.rb
+
+#Dreamweaver
+_notes/

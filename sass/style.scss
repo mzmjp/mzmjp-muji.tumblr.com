@@ -1,0 +1,127 @@
+@chaset "utf-8";
+
+@import "normalize";
+
+$main-color: #7f0019;
+
+.page-index {
+}
+
+#container {
+	margin: 0 auto;
+}
+
+/* 暫定措置 */
+.nav {
+	display: none;
+}
+
+#header {
+	margin: 0 0 2em;
+}
+
+.blog-title {
+	margin: 0;
+	font-size: 260%;
+	font-weight: bold;
+	text-align: center;
+	a:link,a:visited {
+		color: $main-color;
+		text-decoration: none;
+	}
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.blog-description {
+	margin: 0 auto;
+	width: 700px;
+	font-size: 110%;
+	font-weight: normal;
+	text-align: center;
+}
+
+.post {
+	margin: 0 auto 2em;
+	width: 460px;
+	background: #f5f2e9;
+	border-top: solid 10px $main-color;
+}
+
+.date {
+	margin: .2em 0 0 .2em;
+	font-size: 250%;
+	font-weight: bold;
+	p {
+		margin: 0;
+		font-size: 40%;
+		a:link,a:visited {
+			color: #323232;
+			text-decoration: none;
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+.entry-header {
+	margin: 0 0 .5em 0;
+}
+
+.entry-title {
+	margin: 0 0 0 .5em;
+	font-size: 100%;
+	a:link,a:visited {
+		color: #323232;
+		text-decoration: none;
+	}
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.entry-content {
+	padding: 1em 0 0;
+	border-top: solid 6px $main-color;
+	border-bottom: solid 6px $main-color;
+	p {
+		margin: 0 .5em 1em;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+.entry-footer {
+	overflow: hidden;
+	padding: 0.4em 0.5em;
+	.meta {
+		float: left;
+		.timeago{
+			a:link,a:visited {
+				color: #323232;
+				text-decoration: none;
+			}
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	.like_and_reblog_buttons {
+		margin: 0;
+		float: right;
+		li {
+			float: left;
+			margin: .2em 0 0 1em;
+			list-style-type: none;
+		}
+	}
+}
+
+#footer {
+	margin: 0 0 1em;
+	text-align: center;
+}
