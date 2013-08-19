@@ -121,6 +121,14 @@ $main-color: #7f0019;
 			list-style-type: none;
 		}
 	}
+	.social-buttons {
+		display: none;
+	}
+}
+
+#pager {
+	margin: 0 auto;
+	width: 460px;
 }
 
 #footer {
