@@ -7,5 +7,9 @@
 .sass-cache
 config.rb
 
+#Sublime Text 2
+*.sublime-project
+*.sublime-workspace
+
 #Dreamweaver
 _notes/
