@@ -16,6 +16,16 @@ $main-color: #7f0019;
 
 #header {
 	margin: 2em 0;
+	a
+	{
+		&:link,&:visited {
+			color: $main-color;
+			text-decoration: none;
+	}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .blog-title {
@@ -23,13 +33,6 @@ $main-color: #7f0019;
 	font-size: 260%;
 	font-weight: bold;
 	text-align: center;
-	a:link,a:visited {
-		color: $main-color;
-		text-decoration: none;
-	}
-	&:hover {
-		text-decoration: underline;
-	}
 }
 
 .blog-description {
@@ -86,14 +89,20 @@ $main-color: #7f0019;
 	border-bottom: solid 6px $main-color;
 	p {
 		margin: 0 .5em 1em;
-		a:link,a:visited {
-			color: $main-color;
-			font-weight: bold;
+		a {
+			&:link,&:visited {
+				color: $main-color;
+				font-weight: bold;
+				text-decoration: none;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
 		}
-		img {
-			display: block;
-			margin: 0 auto;
-		}
+	}
+	img {
+		display: block;
+		margin: 0 auto;
 	}
 }
 

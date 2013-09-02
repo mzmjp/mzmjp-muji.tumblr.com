@@ -8,8 +8,7 @@
 config.rb
 
 #Sublime Text 2
-*.sublime-project
-*.sublime-workspace
+*.sublime-*
 
 #Dreamweaver
 _notes/
