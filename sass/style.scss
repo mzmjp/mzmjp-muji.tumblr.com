@@ -136,8 +136,24 @@ $main-color: #7f0019;
 }
 
 #pager {
-	margin: 0 auto;
+	overflow: hidden;
+	margin: 0 auto 1em;
 	width: 460px;
+	a:link,a:visited,a:hover {
+		color: #7f0019;
+		&:before {
+			content: "\3c\3c\20";
+		}
+	}
+	a.next {
+		float: right;
+		&:before {
+			content: none;
+		}
+		&:after {
+			content: "\20\3e\3e";
+		}
+	}
 }
 
 #footer {
