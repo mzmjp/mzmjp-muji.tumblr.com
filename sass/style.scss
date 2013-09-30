@@ -48,6 +48,8 @@ $main-color: #7f0019;
 	width: 460px;
 	background: #f5f2e9;
 	border-top: solid 10px $main-color;
+	box-shadow: 0 0 1px #444;
+	box-shadow: 0 0 1px rgba(0,0,0, 0.4);
 }
 
 .date {
