@@ -7,9 +7,9 @@ $main-color: #7f0019;
 
 #container {
 	margin: 0 auto;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* 暫定措置 */
 .nav {
 	display: none;
 }
@@ -29,7 +29,7 @@ $main-color: #7f0019;
 }
 
 .blog-title {
-	margin: 0;
+	margin: 0 0 .2em;
 	font-size: 260%;
 	font-weight: bold;
 	text-align: center;
@@ -41,6 +41,15 @@ $main-color: #7f0019;
 	font-size: 110%;
 	font-weight: normal;
 	text-align: center;
+}
+
+.tagged {
+	margin: 1em auto;
+	text-align: center;
+	font-size: 120%;
+	&:before, &:after {
+		content: "\25bc";
+	}
 }
 
 .post {
@@ -59,8 +68,10 @@ $main-color: #7f0019;
 	p {
 		margin: 0;
 		font-size: 40%;
-		a:link,a:visited {
-			color: #323232;
+	}
+	a {
+		color: #323232;
+		&:link,&:visited {
 			text-decoration: none;
 		}
 		&:hover{
@@ -91,15 +102,16 @@ $main-color: #7f0019;
 	border-bottom: solid 6px $main-color;
 	p {
 		margin: 0 .5em 1em;
-		a {
-			&:link,&:visited {
-				color: $main-color;
-				font-weight: bold;
-				text-decoration: none;
-			}
-			&:hover {
-				text-decoration: underline;
-			}
+		line-height: 1.5;
+	}
+	a {
+		&:link,&:visited {
+			color: $main-color;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 	img,iframe {
