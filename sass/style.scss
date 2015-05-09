@@ -16,16 +16,6 @@ $main-color: #7f0019;
 
 #header {
 	margin: 2em 0;
-	a
-	{
-		&:link,&:visited {
-			color: $main-color;
-			text-decoration: none;
-	}
-		&:hover {
-			text-decoration: underline;
-		}
-	}
 }
 
 .blog-title {
@@ -33,6 +23,19 @@ $main-color: #7f0019;
 	font-size: 260%;
 	font-weight: bold;
 	text-align: center;
+	a {
+		text-decoration: none;
+		transition: all ease .1s;
+		&:link,
+		&:visited {
+			color: $main-color;
+		}
+		&:hover,
+		&:focus {
+			color: #fff;
+			background: $main-color;
+		}
+	}
 }
 
 .blog-description {
@@ -41,13 +44,26 @@ $main-color: #7f0019;
 	font-size: 110%;
 	font-weight: normal;
 	text-align: center;
+	a {
+		color: $main-color;
+		transition: all ease .1s;
+		&:link,
+		&:visited {
+			text-decoration: underline;
+		}
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
 }
 
 .tagged {
 	margin: 1em auto;
 	text-align: center;
 	font-size: 120%;
-	&:before, &:after {
+	&:before,
+	&:after {
 		content: "\25bc";
 	}
 }
@@ -57,7 +73,7 @@ $main-color: #7f0019;
 	width: 460px;
 	background: #f5f2e9;
 	border-top: solid 10px $main-color;
-	box-shadow: 1px 0 1px #444,-1px 1px 1px #444;
+	box-shadow: 1px 0 1px #444,-1px 1px 1px #444; //fallback
 	box-shadow: 1px 0px 1px rgba(0,0,0,0.4), -1px 1px 1px rgba(0,0,0,0.4);
 }
 
@@ -71,10 +87,12 @@ $main-color: #7f0019;
 	}
 	a {
 		color: #323232;
-		&:link,&:visited {
+		&:link,
+		&:visited {
 			text-decoration: none;
 		}
-		&:hover{
+		&:hover,
+		&:focus {
 			text-decoration: underline;
 		}
 	}
@@ -87,12 +105,16 @@ $main-color: #7f0019;
 .entry-title {
 	margin: 0 0 0 .5em;
 	font-size: 100%;
-	a:link,a:visited {
+	a {
 		color: #323232;
-		text-decoration: none;
-	}
-	&:hover{
-		text-decoration: underline;
+		&:link,
+		&:visited {
+			text-decoration: none;
+		}
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -105,13 +127,18 @@ $main-color: #7f0019;
 		line-height: 1.5;
 	}
 	a {
-		&:link,&:visited {
+		transition: all ease .1s;
+		&:link,
+		&:visited {
 			color: $main-color;
 			font-weight: bold;
-			text-decoration: none;
-		}
-		&:hover {
 			text-decoration: underline;
+		}
+		&:hover,
+		&:focus {
+			color: #fff;
+			background: $main-color;
+			text-decoration: none;
 		}
 	}
 	img,iframe {
@@ -127,12 +154,16 @@ $main-color: #7f0019;
 	.meta {
 		float: left;
 		.meta-elements {
-			a:link,a:visited {
-				color: #323232;
-				text-decoration: none;
-			}
-			&:hover{
-				text-decoration: underline;
+			a {
+				&:link,
+				&:visited {
+					color: #323232;
+					text-decoration: underline;
+				}
+				&:hover
+				&:focus {
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -156,11 +187,13 @@ $main-color: #7f0019;
 			margin: 0 .3em 0 0;
 		}
 		.action a {
-			&:link,&:visited {
+			&:link,
+			&:visited {
 				color: $main-color;
 				text-decoration: none;
 			}
-			&:hover {
+			&:hover,
+			&:focus {
 				text-decoration: underline;
 			}
 		}
@@ -171,8 +204,14 @@ $main-color: #7f0019;
 	overflow: hidden;
 	margin: 0 auto 1em;
 	width: 460px;
-	a:link,a:visited,a:hover {
-		color: #7f0019;
+	a {
+	color: #7f0019;
+		&:link,
+		&:visited,
+		&:hover,
+		&:focus {	
+			text-decoration: underline;
+		}
 		&:before {
 			content: "\3c\3c\20";
 		}
